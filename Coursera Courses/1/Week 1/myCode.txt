@@ -1,0 +1,83 @@
+//Q1
+function phrase3words(value1, value2, value3) { 
+    var answer = (value1 + " " + value2 + " " + value3);   
+    return answer; 
+}
+var result1 = phrase3words("smile","at","everyone"); 
+print(result1); 
+var result2 = phrase3words("everyone","wave", "back"); 
+print(result2); 
+var result3 = phrase3words("coding","is", "fun"); 
+print(result3);
+
+//Q2
+function reformatName(first, last) { 
+  var format = (last + ", " + first);
+  return format;
+}
+var result = reformatName("Susan", "Rodger"); 
+print(result); 
+result = reformatName("Robert", "Duvall"); 
+print(result);
+
+//Q3
+function numberPixels(namefile) { 
+var someImg = new SimpleImage(namefile); 
+var height = someImg.getHeight(); 
+var width = someImg.getWidth();
+var val = height*width;
+return val;
+} 
+ 
+var result = numberPixels("chapel.png"); 
+print(result); 
+result = numberPixels("dinos.png"); 
+print(result);
+
+//Q4
+function perimeter(imageName) { 
+var someImg = new SimpleImage(imageName); 
+var height = someImg.getHeight(); 
+var width = someImg.getWidth();
+var value = 2*(height+width);
+return value; 
+} 
+ 
+print(perimeter("rodger.png")); 
+
+//Q5
+function printPixel(nameImage, xpos, ypos) { 
+var someImg = new SimpleImage(nameImage);
+var Pix = someImg.getPixel(xpos,ypos);
+
+print("red is "+ Pix.getRed());
+print("green is "+ Pix.getGreen());
+print("blue is "+ Pix.getBlue());
+
+//Q6
+function sumPixel(nameOfImage, xpos, ypos) { 
+var someImg = new SimpleImage(nameOfImage);
+var Pix = someImg.getPixel(xpos,ypos);
+var x = 0;
+x = x + Pix.getRed();
+x += Pix.getBlue();
+x += Pix.getGreen();
+return x;
+} 
+ 
+var answer = sumPixel("drewgreen.png", 250, 500); 
+print(answer); 
+answer = sumPixel("drewgreen.png",10, 10); 
+print(answer);
+} 
+ 
+printPixel("drewgreen.png",10, 10); 
+printPixel("drewgreen.png",250, 500);
+
+var img = new SimpleImage(200,200);
+for(var pixel of img.values()) {
+    pixel.setRed(255);
+    pixel.setGreen(255);
+}
+print(img);
+img
