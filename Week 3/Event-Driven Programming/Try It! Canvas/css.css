@@ -22,3 +22,14 @@ div {
 .blueback {
 	background-color: blue;
 }
+
+canvas {
+	width: 200pt;
+	height: 100pt;
+	margin: 10px;
+	border: 1px solid lightgray;
+}
+
+input {
+	font-size: 20pt;
+}
