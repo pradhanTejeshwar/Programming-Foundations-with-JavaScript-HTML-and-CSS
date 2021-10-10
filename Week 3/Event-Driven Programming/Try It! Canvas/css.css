@@ -1,9 +1,9 @@
-h1{
+h1 {
 	font-family: arial;
 	color: dimgray;
 }
 
-div{
+div {
 	width: 140pt;
 	padding: 5pt;
 	margin: 10pt;
@@ -11,10 +11,14 @@ div{
 	font-size: 16pt;
 }
 
-#div1{
-	background-color: lightsteelblue;
+.orangeback {
+	background-color: orange;
 }
 
-#div2{
-	background-color: lightsalmon;
+.fuchsiaback {
+	background-color: fuchsia;
+}
+
+.blueback {
+	background-color: blue;
 }
