@@ -1,0 +1,39 @@
+h1 {
+	font-family: arial;
+	color: dimgray;
+}
+
+body {
+  margin: 20px;
+}
+
+div {
+	width: 140pt;
+	padding: 5pt;
+	margin: 10pt;
+	border: 1px solid lightgray;
+	font-size: 16pt;
+}
+
+canvas {
+  width: 300pt;
+  height: 300pt;
+  margin: 10px;
+  border: 1px solid lightgray;
+}
+
+input {
+  font-size: 20pt;
+}
+
+.orangeback {
+	background-color: orange;
+}
+
+.fuchsiaback {
+	background-color: fuchsia;
+}
+
+.blueback {
+	background-color: blue;
+}
